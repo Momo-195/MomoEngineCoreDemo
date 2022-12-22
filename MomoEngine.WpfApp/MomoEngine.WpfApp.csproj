@@ -8,16 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="C:\Users\墨墨\.nuget\packages\momoengine.core\1.0.1.5\contentFiles\any\net6.0\Logo.ico" />
-    <Content Remove="C:\Users\墨墨\.nuget\packages\momoengine.core\1.0.1.5\contentFiles\any\net6.0\MomoEngine_Help_Ch.md" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Assets\Resources\logo.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MomoEngine.Core" Version="1.0.1.5" />
+    <PackageReference Include="MomoEngine.Core" Version="1.0.1.6" />
   </ItemGroup>
 
   <ItemGroup>
