@@ -12,7 +12,11 @@ namespace MomoEngine.WinFormsApp.Assets.Windows
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            EngineCore.engineInstance.AddBehaviour<MainFormScript>(this);
+            (bool state, string error) ret = EngineCore.engineInstance.AddBehaviour<MainFormScript>(this);
+            if (!ret.state)
+            {
+                Debug.LogWarn(ret.error);
+            }
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)

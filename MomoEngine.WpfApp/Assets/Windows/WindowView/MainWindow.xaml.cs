@@ -16,7 +16,11 @@ namespace MomoEngine.WpfApp.Assets.Windows.WindowView
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            EngineCore.engineInstance.AddBehaviour<MainWindowScript>(this);
+            (bool state, string error) ret = EngineCore.engineInstance.AddBehaviour<MainWindowScript>(this);
+            if (!ret.state)
+            {
+                Debug.LogWarn(ret.error);
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
