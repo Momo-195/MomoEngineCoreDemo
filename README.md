@@ -7,7 +7,7 @@
 - 立个Flag：并行协程
 
 #### 脚本挂载/移除 函数
-```
+```C#
 namespace EngineFramework.Application；
 
 public class Engine
@@ -73,7 +73,7 @@ public class Engine
 ```
 
 #### 协程启停函数 函数
-```
+```C#
 namespace EngineFramework.Application；
 
 public class Behaviour : BehaviourBase
